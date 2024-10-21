@@ -32,7 +32,7 @@ export const Navbar: Component = () => {
     <div class="border-b border-border bg-surface">
       <div class="flex items-center justify-between px-6 py-3 mx-auto max-w-840px">
         <div class="flex items-baseline gap-4">
-          <Button variant="link" class="text-foreground text-lg font-semibold border-b border-transparent hover:(no-underline !border-border) h-auto py-0 px-1 ml--1 rounded-none !transition-border-color-250" as={A} href="/">
+          <Button variant="link" class=" items-baseline text-foreground text-lg font-semibold border-b border-transparent hover:(no-underline !border-border) h-auto py-0 px-1 ml--1 rounded-none !transition-border-color-250" as={A} href="/">
             Pas Fute Fute
           </Button>
 

@@ -3,9 +3,13 @@ import UnoCSS from 'unocss/vite';
 
 export default defineConfig({
   vite: {
-    plugins: [UnoCSS()],
+    plugins: [
+      UnoCSS(),
+    ],
   },
   server: {
     preset: 'cloudflare-pages',
   },
+
+  
 });

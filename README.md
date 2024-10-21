@@ -12,4 +12,6 @@ Ce projet est open source et sous licence MIT. Rendez-vous sur le fichier [`LICE
 
 ## Crédits
 
-Ce projet est développé et maintenu avec amour par [Corentin Thomasset](https://corentin.tech).
+Ce projet est développé et maintenu avec passion par [Corentin Thomasset](https://corentin.tech).
+
+Le logo est l'icon [`face-explode-solid`](https://icones.js.org/collection/all?icon=flowbite:face-explode-solid) de la collection [flowbite](https://icones.js.org/collection/flowbite), sous licence MIT.

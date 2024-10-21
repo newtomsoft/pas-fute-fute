@@ -18,6 +18,8 @@
   "dependencies": {
     "@corentinth/chisels": "^1.1.0",
     "@kobalte/core": "^0.13.7",
+    "@pas-fute-fute/data": "workspace:*",
+    "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.14.10",
     "@solidjs/start": "^1.0.9",
     "@unocss/reset": "^0.59.2",
@@ -25,6 +27,7 @@
     "clsx": "^2.1.1",
     "lodash-es": "^4.17.21",
     "solid-js": "^1.9.2",
+    "solid-sonner": "^0.2.8",
     "tailwind-merge": "^2.5.4",
     "unocss": "^0.59.2",
     "unocss-preset-animations": "^1.1.0",
@@ -36,6 +39,7 @@
     "@types/lodash-es": "^4.17.12",
     "eslint": "^9.13.0",
     "eslint-plugin-solid": "^0.14.3",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vite-plugin-solid-markdown": "^0.0.6"
   }
 }

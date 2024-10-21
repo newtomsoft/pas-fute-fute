@@ -5,6 +5,7 @@ import { Suspense } from 'solid-js';
 
 import { Footer } from './components/footer';
 import { Navbar } from './components/navbar';
+import { Toaster } from './components/sonner';
 import '@unocss/reset/tailwind.css';
 import 'virtual:uno.css';
 import './app.css';
@@ -19,13 +20,14 @@ export default function App() {
       root={props => (
         <>
           <Suspense>
+            <Toaster />
             <ColorModeScript storageType={localStorageManager.type} storageKey={colorModeStorageKey} initialColorMode={initialColorMode} />
             <ColorModeProvider
               initialColorMode={initialColorMode}
               storageManager={localStorageManager}
             >
               <div class="min-h-svh font-sans text-sm font-400 flex flex-col">
-                <Navbar />
+                {/* <Navbar /> */}
                 <div class="flex-1 p-6 pb-20 ">
                   {props.children}
                 </div>
