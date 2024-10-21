@@ -13,7 +13,7 @@ export default function App() {
         <>
           <Suspense>
             {' '}
-            <div class="min-h-screen font-sans text-sm font-400">{props.children}</div>
+            <div class="min-h-svh font-sans text-sm font-400">{props.children}</div>
           </Suspense>
         </>
       )}

@@ -15,7 +15,7 @@ export default function Home() {
   });
 
   return (
-    <main class="flex flex-col items-center justify-center mt-6">
+    <main class="flex flex-col items-center justify-center p-6">
       <div>{quote()}</div>
       <Button onClick={refreshQuote} class="mt-4" variant="secondary">
         <div class="i-tabler-refresh mr-2" />
