@@ -11,7 +11,7 @@ import 'virtual:uno.css';
 import './app.css';
 
 export default function App() {
-  const initialColorMode = 'system';
+  const initialColorMode = 'light';
   const colorModeStorageKey = 'pff_color_mode';
   const localStorageManager = createLocalStorageManager(colorModeStorageKey);
 
