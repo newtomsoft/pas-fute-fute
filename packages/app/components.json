@@ -10,7 +10,7 @@
     "prefix": ""
   },
   "alias": {
-    "component": "@/components",
+    "component": "~/components",
     "cn": "~/libs/cn"
   }
 }
