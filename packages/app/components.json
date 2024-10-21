@@ -11,6 +11,7 @@
   },
   "alias": {
     "component": "~/components",
+    "ui": "~/components",
     "cn": "~/libs/cn"
   }
 }
