@@ -2,6 +2,7 @@
   "name": "@pas-fute-fute/app",
   "type": "module",
   "license": "MIT",
+  "packageManager": "pnpm@9.11.0",
   "scripts": {
     "dev": "vinxi dev",
     "build": "pnpm build:node",
