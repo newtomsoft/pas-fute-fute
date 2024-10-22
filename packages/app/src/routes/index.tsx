@@ -70,13 +70,13 @@ export default function Home() {
         <p>
           <strong>PasFuteFute</strong>
           {' '}
-          est un projet dédié aux expressions françaises amusantes et imagées pour décrire quelqu&#39;un de manière polie mais taquine. De
+          est un projet dédié aux expressions françaises amusantes et imagées pour décrire quelqu'un de manière polie mais taquine. De
           {' '}
-          <em>&quot;bête à manger du foin&quot;</em>
+          <em>« bête à manger du foin »</em>
           {' '}
           à
           {' '}
-          <em>&quot;il n&#39;a pas la lumière à tous les étages&quot;</em>
+          <em>« il n'a pas la lumière à tous les étages »</em>
           , ces expressions font partie du riche patrimoine linguistique français. Sur ce site, vous trouverez une collection grandissante de ces perles du langage courant.
         </p>
         <h3 id="origine-des-expressions">Origine des expressions</h3>
@@ -85,7 +85,7 @@ export default function Home() {
         </p>
         <h3 id="pourquoi-utiliser-ces-expressions-">Pourquoi utiliser ces expressions ?</h3>
         <p>
-          Ces expressions permettent de parler de l&#39;intelligence ou du comportement de quelqu&#39;un sans être trop direct·e ou blessant·e. Elles ajoutent du charme et de la finesse à une conversation, et certaines d&#39;entre elles sont devenues tellement ancrées dans la culture qu&#39;elles sont utilisées presque sans y penser. Que ce soit pour une blague entre amis ou pour éviter un commentaire trop frontal,
+          Ces expressions permettent de parler de l'intelligence ou du comportement de quelqu'un sans être trop direct·e ou blessant·e. Elles ajoutent du charme et de la finesse à une conversation, et certaines d'entre elles sont devenues tellement ancrées dans la culture qu'elles sont utilisées presque sans y penser. Que ce soit pour une blague entre amis ou pour éviter un commentaire trop frontal,
           {' '}
           <strong>les expressions de PasFuteFute</strong>
           {' '}
@@ -93,7 +93,7 @@ export default function Home() {
         </p>
         <h3 id="contribuez-pasfut-fut-">Contribuez à PasFuteFute</h3>
         <p>
-          Vous connaissez une expression ou une citation qui n&#39;est pas encore présente sur le site ? Vous pouvez contribuer en soumettant vos propres trouvailles via notre
+          Vous connaissez une expression ou une citation qui n'est pas encore présente sur le site ? Vous pouvez contribuer en soumettant vos propres trouvailles via notre
           {' '}
           <a href="https://github.com/votre-utilisateur/pas-fute-fute">dépôt GitHub</a>
           . Chaque contribution aide à enrichir ce répertoire unique des expressions françaises.
