@@ -1,3 +1,5 @@
+import type { DropdownMenuTriggerProps } from '@kobalte/core/dropdown-menu';
+import type { TooltipTriggerProps } from '@kobalte/core/tooltip';
 import type { Component } from 'solid-js';
 import { A } from '@solidjs/router';
 import { Button } from './button';
@@ -17,14 +19,24 @@ export const Header: Component = () => {
             ...
           </h1>
 
-          <div class="flex gap-2 items-center">
+          <div class="flex gap-1 items-center">
             <Tooltip>
-
-              <TooltipTrigger>
-                <Button variant="ghost" class="text-2xl px-0 size-9 hidden md:inline-flex text-muted-foreground transition" as={A} href="https://github.com/CorentinTh/pas-fute-fute" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
-                  <div class="i-tabler-brand-github" />
-                </Button>
-              </TooltipTrigger>
+              <TooltipTrigger
+                as={(props: TooltipTriggerProps) => (
+                  <Button
+                    variant="ghost"
+                    class="text-2xl px-0 size-9 hidden md:inline-flex text-muted-foreground transition"
+                    as={A}
+                    href="https://github.com/CorentinTh/pas-fute-fute"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub repository"
+                    {...props}
+                  >
+                    <div class="i-tabler-brand-github" />
+                  </Button>
+                )}
+              />
 
               <TooltipContent>
                 Dépôt GitHub
@@ -32,56 +44,79 @@ export const Header: Component = () => {
             </Tooltip>
 
             <Tooltip>
-              <TooltipTrigger>
-                <Button variant="ghost" class="text-2xl px-0 size-9 hidden md:inline-flex text-muted-foreground transition" as={A} href="https://buymeacoffee.com/cthmsst" target="_blank" rel="noopener noreferrer" aria-label="Soutenir le projet">
-                  <div class="i-tabler-pig-money" />
-                </Button>
-              </TooltipTrigger>
+              <TooltipTrigger
+                as={(props: TooltipTriggerProps) => (
+                  <Button
+                    variant="ghost"
+                    class="text-2xl px-0 size-9 hidden md:inline-flex text-muted-foreground transition"
+                    as={A}
+                    href="https://buymeacoffee.com/cthmsst"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Soutenir le projet"
+                    {...props}
+                  >
+                    <div class="i-tabler-pig-money" />
+                  </Button>
+                )}
+              />
 
               <TooltipContent>
                 Soutenir le projet
               </TooltipContent>
             </Tooltip>
 
-            <Tooltip>
-              <TooltipTrigger>
-                <DropdownMenu>
-                  <DropdownMenuTrigger as={Button} class="text-2xl px-0 size-9 text-muted-foreground transition" variant="ghost" aria-label="Menu icon">
-                    <div class="i-tabler-dots-vertical" />
-                  </DropdownMenuTrigger>
+            <DropdownMenu>
+              <DropdownMenuTrigger
+                as={(triggerProps: DropdownMenuTriggerProps) => (
+                  <Tooltip>
+                    <TooltipTrigger
+                      as={(props: TooltipTriggerProps) => (
+                        <Button
+                          variant="ghost"
+                          class="text-2xl px-0 size-9 text-muted-foreground transition"
+                          aria-label="Menu icon"
+                          {...props}
+                        >
+                          <div class="i-tabler-dots-vertical" />
+                        </Button>
+                      )}
+                      {...triggerProps}
 
-                  <DropdownMenuContent class="w-46">
+                    />
 
-                    {/* Mobile only items */}
-                    <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer md:hidden" target="_blank" href="https://github.com/CorentinTh/pas-fute-fute" rel="noopener noreferrer">
-                      <div class="i-tabler-brand-github text-lg" />
-                      GitHub
-                    </DropdownMenuItem>
+                    <TooltipContent>
+                      Plus d'options
+                    </TooltipContent>
+                  </Tooltip>
+                )}
+              />
 
-                    <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer" target="_blank" href="https://github.com/CorentinTh/pas-fute-fute/issues/new/choose" rel="noopener noreferrer">
-                      <div class="i-tabler-bug text-lg" />
-                      Signaler un bug
-                    </DropdownMenuItem>
+              <DropdownMenuContent class="w-46">
 
-                    <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer" target="_blank" href="https://github.com/CorentinTh/pas-fute-fute" rel="noopener noreferrer">
-                      <div class="i-tabler-git-branch text-lg" />
-                      Contribuer
-                    </DropdownMenuItem>
+                {/* Mobile only items */}
+                <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer md:hidden" target="_blank" href="https://github.com/CorentinTh/pas-fute-fute" rel="noopener noreferrer">
+                  <div class="i-tabler-brand-github text-lg" />
+                  GitHub
+                </DropdownMenuItem>
 
-                    <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer md:hidden" target="_blank" href="https://buymeacoffee.com/cthmsst" rel="noopener noreferrer">
-                      <div class="i-tabler-pig-money text-lg" />
-                      Soutenir le projet
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </TooltipTrigger>
+                <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer" target="_blank" href="https://github.com/CorentinTh/pas-fute-fute/issues/new/choose" rel="noopener noreferrer">
+                  <div class="i-tabler-bug text-lg" />
+                  Signaler un bug
+                </DropdownMenuItem>
 
-              <TooltipContent>
-                Plus d'options
-              </TooltipContent>
-            </Tooltip>
+                <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer" target="_blank" href="https://github.com/CorentinTh/pas-fute-fute" rel="noopener noreferrer">
+                  <div class="i-tabler-git-branch text-lg" />
+                  Contribuer
+                </DropdownMenuItem>
+
+                <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer md:hidden" target="_blank" href="https://buymeacoffee.com/cthmsst" rel="noopener noreferrer">
+                  <div class="i-tabler-pig-money text-lg" />
+                  Soutenir le projet
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
-
         </div>
 
         <p class="text-lg text-muted-foreground mt-2">
