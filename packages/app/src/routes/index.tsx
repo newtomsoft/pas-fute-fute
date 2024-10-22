@@ -1,12 +1,12 @@
-import { getRandomQuote } from '@pas-fute-fute/data';
+import { getUniqueRandomQuote } from '@pas-fute-fute/data';
 import { createSignal, Suspense } from 'solid-js';
 import { Button } from '~/components/button';
 import { Card, CardHeader } from '~/components/card';
 import { useCopy } from '~/libs/copy';
 
 export default function Home() {
-  const [getQuote, setQuote] = createSignal(getRandomQuote().quote);
-  const refreshQuote = () => setQuote(getRandomQuote().quote);
+  const [getQuote, setQuote] = createSignal(getUniqueRandomQuote().quote);
+  const refreshQuote = () => setQuote(getUniqueRandomQuote().quote);
 
   const { copy, getIsJustCopied } = useCopy(getQuote);
 

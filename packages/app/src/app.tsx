@@ -15,9 +15,6 @@ export default function App() {
   const colorModeStorageKey = 'pff_color_mode';
   const localStorageManager = createLocalStorageManager(colorModeStorageKey);
 
-  // eslint-disable-next-line no-console
-  console.log({ config });
-
   return (
     <Router
       root={props => (
