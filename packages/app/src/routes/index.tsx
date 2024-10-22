@@ -69,14 +69,12 @@ export default function Home() {
         </p>
         <h3 id="origine-des-expressions">Origine des expressions</h3>
         <p>
-          Les expressions françaises pour parler des moins fute·e·s ont souvent des racines historiques ou culturelles. Par exemple, l&#39;expression
-          <strong>&quot;bête à manger du foin&quot;</strong>
-          {' '}
-          est une métaphore qui compare une personne à un animal peu intelligent, mangeant sans se poser de questions. Ces expressions apportent souvent une touche d&#39;humour et permettent d&#39;exprimer des vérités parfois désagréables de façon adoucie.
+          Les expressions françaises pour parler des moins fute·e·s ont souvent des racines historiques ou culturelles. Par exemple, l'expression « il n'a pas inventé l'eau chaude » fait référence à l'invention de l'eau chaude, qui est un concept si simple qu'il semble évident. D'autres expressions, comme « il a un pois chiche dans la tête », sont plus imagées et visent à décrire le comportement d'une personne de manière humoristique.
         </p>
         <h3 id="pourquoi-utiliser-ces-expressions-">Pourquoi utiliser ces expressions ?</h3>
         <p>
           Ces expressions permettent de parler de l&#39;intelligence ou du comportement de quelqu&#39;un sans être trop direct·e ou blessant·e. Elles ajoutent du charme et de la finesse à une conversation, et certaines d&#39;entre elles sont devenues tellement ancrées dans la culture qu&#39;elles sont utilisées presque sans y penser. Que ce soit pour une blague entre amis ou pour éviter un commentaire trop frontal,
+          {' '}
           <strong>les expressions de PasFuteFute</strong>
           {' '}
           sont là pour vous inspirer.
@@ -84,7 +82,8 @@ export default function Home() {
         <h3 id="contribuez-pasfut-fut-">Contribuez à PasFuteFute</h3>
         <p>
           Vous connaissez une expression ou une citation qui n&#39;est pas encore présente sur le site ? Vous pouvez contribuer en soumettant vos propres trouvailles via notre
-          <a href="https://github.com/votre-utilisateur/pas-fute-fute">page GitHub</a>
+          {' '}
+          <a href="https://github.com/votre-utilisateur/pas-fute-fute">dépôt GitHub</a>
           . Chaque contribution aide à enrichir ce répertoire unique des expressions françaises.
         </p>
 
