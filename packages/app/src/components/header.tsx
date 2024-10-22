@@ -99,7 +99,7 @@ export const Header: Component = () => {
                 {/* Mobile only items */}
                 <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer md:hidden" target="_blank" href="https://github.com/CorentinTh/pas-fute-fute" rel="noopener noreferrer">
                   <div class="i-tabler-brand-github text-lg" />
-                  GitHub
+                  Code source
                 </DropdownMenuItem>
 
                 <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer" target="_blank" href="https://github.com/CorentinTh/pas-fute-fute/issues/new/choose" rel="noopener noreferrer">
