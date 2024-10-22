@@ -1,22 +1,14 @@
-import { buildUrl } from '@corentinth/chisels';
-import { createResource, Suspense } from 'solid-js';
+import { getRandomQuote } from '@pas-fute-fute/data';
+import { createSignal, Suspense } from 'solid-js';
 import { Button } from '~/components/button';
 import { Card, CardHeader } from '~/components/card';
-import { config } from '~/libs/config';
 import { useCopy } from '~/libs/copy';
 
 export default function Home() {
-  const [quote, { refetch: refreshQuote }] = createResource(async () => {
-    const url = buildUrl({
-      baseUrl: config.baseUrl,
-      path: '/api/quotes/random',
-    });
+  const [getQuote, setQuote] = createSignal(getRandomQuote().quote);
+  const refreshQuote = () => setQuote(getRandomQuote().quote);
 
-    const response = await fetch(url);
-    return (await response.json()).quote as string;
-  });
-
-  const { copy, getIsJustCopied } = useCopy(quote);
+  const { copy, getIsJustCopied } = useCopy(getQuote);
 
   return (
     <main class="mt-2 sm:mt-8">
@@ -38,7 +30,7 @@ export default function Home() {
         <Card class="text-center text-lg w-full">
           <CardHeader>
             <Suspense fallback="&nbsp;">
-              {quote()}
+              {getQuote()}
             </Suspense>
           </CardHeader>
         </Card>
