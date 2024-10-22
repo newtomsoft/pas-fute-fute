@@ -1,5 +1,5 @@
 declare module '*quotes.yaml' {
-  export const quotes: {
-    quote: string;
-  }[];
+  const quotes: { quote: string }[];
+
+  export default quotes;
 }

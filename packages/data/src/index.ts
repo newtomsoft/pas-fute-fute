@@ -1,5 +1,5 @@
 import { shuffle } from 'lodash-es';
-import { quotes } from './quotes.yaml';
+import quotes from './quotes.yaml';
 
 export { createUniqueRandomQuoteGenerator, getRandomQuote, getUniqueRandomQuote, quotes };
 
