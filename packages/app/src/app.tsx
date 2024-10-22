@@ -5,6 +5,7 @@ import { Suspense } from 'solid-js';
 
 import { Footer } from './components/footer';
 import { Toaster } from './components/sonner';
+import { config } from './libs/config';
 import '@unocss/reset/tailwind.css';
 import 'virtual:uno.css';
 import './app.css';
@@ -13,6 +14,9 @@ export default function App() {
   const initialColorMode = 'light';
   const colorModeStorageKey = 'pff_color_mode';
   const localStorageManager = createLocalStorageManager(colorModeStorageKey);
+
+  // eslint-disable-next-line no-console
+  console.log({ config });
 
   return (
     <Router
