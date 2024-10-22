@@ -7,7 +7,7 @@
 </p>
 
 <h1 align="center">
-  Pas Fute Fute - Les expressions pour les moins futé·e·s
+  PasFuteFute
 </h1>
 
 <p align="center">
@@ -18,6 +18,8 @@
   <a href="https://pasfutefute.fr">Website</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
   <a href="./packages/data/src/quotes.yaml">Les expressions</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://pasfutefute.fr/api/quotes/random">API</a>
 </p>
 
 ## Introduction
