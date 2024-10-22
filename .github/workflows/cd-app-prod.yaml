@@ -26,6 +26,9 @@ jobs:
 
       - name: Build the app
         run: pnpm -F @pas-fute-fute/app build:cloudflare
+        env:
+          VITE_PLAUSIBLE_HOST: ${{ secrets.PLAUSIBLE_HOST }}
+          VITE_PLAUSIBLE_DOMAIN: ${{ secrets.PLAUSIBLE_DOMAIN }}
 
       - name: Publish to Cloudflare Pages
         uses: AdrianGonz97/refined-cf-pages-action@v1

@@ -1,5 +1,7 @@
+import { clientOnly } from '@solidjs/start';
 // @refresh reload
 import { createHandler, StartServer } from '@solidjs/start/server';
+import { config } from './libs/config';
 
 export default createHandler(() => (
   <StartServer
@@ -18,6 +20,14 @@ export default createHandler(() => (
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="canonical" href="https://pasfutefute.fr/" />
           {assets}
+
+          {config.plausible.isEnabled && (
+            <script
+              defer
+              data-domain={config.plausible.domain}
+              src={config.plausible.host}
+            />
+          )}
         </head>
         <body>
           <div id="app">{children}</div>
